@@ -4,7 +4,7 @@
     //se i get sono pieni
     if(empty($_GET['name']) === false || empty($_GET['mail']) === false || empty($_GET['age']) === false){
         var_dump($_GET);
-        //salvo i dati e converto l'età in int
+        //salvo i dati
         $name = $_GET['name'];
         $mail = $_GET['mail'];
         $age = $_GET['age'];
