@@ -40,15 +40,6 @@
             ]
         ],
     ];
-
-    foreach ($posts as $key => $date) {
-        // var_dump($key);
-        echo '<ul>Data: ' . $key;
-        foreach ($date as $post){
-            echo '<li>' . $post['title'] . ', ' . $post['author'] . ', ' . $post['text'] . '</li>';
-        }
-        echo '</ul>';
-    }
 ?>
 
 <!DOCTYPE html>
@@ -60,5 +51,13 @@
     <title>Document</title>
 </head>
 <body>
+    <?php foreach ($posts as $key => $date) {
+        // var_dump($key);
+        echo '<ul>Data: ' . $key;
+        foreach ($date as $post){
+            echo '<li>' . $post['title'] . ', ' . $post['author'] . ', ' . $post['text'] . '</li>';
+        }
+        echo '</ul>';
+    }?>
 </body>
 </html>
